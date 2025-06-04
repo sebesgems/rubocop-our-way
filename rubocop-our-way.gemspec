@@ -1,17 +1,17 @@
 Gem::Specification.new do |s|
-  spec.required_ruby_version = ">= 3.3"
+  s.required_ruby_version = '>= 3.3'
 
-  spec.name = "sebes"
-  spec.authors = ["Sebes Technology ltd"]
+  s.name = 'rubocop-our-way'
+  s.authors = ['Sebes Technology ltd']
 
-  spec.summary = "Store all repetitive integration logic"
+  s.summary = 'Store all repetitive integration logic'
 
-  s.version = "1.0.0"
+  s.version = '1.0.2'
 
   s.platform = Gem::Platform::RUBY
 
-  s.add_dependency "rubocop", ">= 1.74"
-  s.add_dependency "rubocop-rails", ">= 2.30"
+  s.add_dependency 'rubocop', '>= 1.74'
+  s.add_dependency 'rubocop-rails', '>= 2.30'
 
-  s.files = %w[ rubocop.yml ]
+  s.files = %w[rubocop.yml]
 end

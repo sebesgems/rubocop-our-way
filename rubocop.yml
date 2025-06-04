@@ -7,7 +7,7 @@ AllCops:
   TargetRubyVersion: 3.3
 
 Layout/LineLength:
-  Max: 90
+  Max: 100
 
 Style/ClassAndModuleChildren:
   Enabled: false
