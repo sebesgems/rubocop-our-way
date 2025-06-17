@@ -4,6 +4,10 @@ AllCops:
   Exclude:
     - sig/*
     - bin/*
+    - db/**/*
+    - vendor/**/*
+    - tmp/**/*
+    - bin/**/*
   TargetRubyVersion: 3.3
 
 Layout/LineLength:
