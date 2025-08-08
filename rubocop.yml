@@ -2,8 +2,7 @@ AllCops:
   SuggestExtensions: false
   NewCops: disable
   Exclude:
-    - sig/*
-    - bin/*
+    - sig/**/*
     - db/**/*
     - vendor/**/*
     - tmp/**/*
@@ -35,15 +34,17 @@ Style/StringLiterals:
 Style/StringConcatenation:
   Enabled: false
 
+Style/BlockDelimiters:
+  Enabled: false
+
+Lint/MissingSuper:
+  Enabled: false
+
 Metrics/BlockLength:
   Exclude:
     - "test/**/*"
 
 Metrics/ClassLength:
-  Exclude:
-    - "test/**/*"
-    
-Metrics/ModuleLength:
   Exclude:
     - "test/**/*"
 
@@ -52,8 +53,6 @@ Metrics/MethodLength:
   Exclude:
     - "test/**/*"
 
-Style/BlockDelimiters:
-  Enabled: false
-
-Lint/MissingSuper:
-  Enabled: false
+Metrics/AbcSize:
+  Exclude:
+    - "test/**/*"

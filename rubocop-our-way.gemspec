@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.summary = 'Store all repetitive integration logic'
 
-  s.version = '1.0.4'
+  s.version = '1.1.0'
 
   s.platform = Gem::Platform::RUBY
 
