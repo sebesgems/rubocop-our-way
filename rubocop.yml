@@ -56,3 +56,9 @@ Metrics/MethodLength:
 Metrics/AbcSize:
   Exclude:
     - "test/**/*"
+
+OurWay/NoToFForMoney:
+  Enabled: true
+  AllowedReceivers:
+    - Time
+    - Process
