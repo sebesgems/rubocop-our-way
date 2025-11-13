@@ -21,6 +21,9 @@ Style/Documentation:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
+Lint/UselessMethodDefinition:
+  Enabled: false
+
 Style/Lambda:
   Enabled: false
 
