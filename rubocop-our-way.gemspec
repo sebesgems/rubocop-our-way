@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.summary = 'Store all repetitive integration logic'
   s.description = 'Company-wide RuboCop defaults and custom cops (e.g., money safety).'
 
-  s.version = '1.3.0'
+  s.version = '1.3.1'
 
   s.platform = Gem::Platform::RUBY
 
