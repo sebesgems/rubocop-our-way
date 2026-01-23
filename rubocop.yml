@@ -44,7 +44,7 @@ Lint/MissingSuper:
   Enabled: false
 
 Metrics/BlockLength:
-  max: 30
+  Max: 30
   Exclude:
     - "test/**/*"
 
