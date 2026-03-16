@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rubocop-our-way (1.4.0)
+    rubocop-our-way (1.5.0)
       rubocop (>= 1.74)
       rubocop-rails (>= 2.30)
 
