@@ -83,6 +83,30 @@ class Blik::PurchasesController < Api::SebesAbstractController
 end
 ```
 
+### OurWay/SpellDeclineCode
+
+Ensures `spell_decline_code` hash values are limited to the set of codes accepted by the Sebes Spell Connections API. Passing an unrecognised value is silently ignored by the gateway, causing hard-to-debug payment flow issues.
+
+Only static string and symbol values are checked; dynamic values (variables, method calls) are skipped since they cannot be verified at parse time.
+
+The full list of allowed codes is defined in `ALLOWED_CODES` inside the cop file. To add a new code, update that constant.
+
+#### Examples
+
+```ruby
+# bad
+{ spell_decline_code: "made_up_code" }
+
+# bad
+params.merge(spell_decline_code: :something_wrong)
+
+# good
+{ spell_decline_code: "do_not_honour" }
+
+# good – dynamic value, validated at runtime by spell-helpers
+{ spell_decline_code: response["error_code"] }
+```
+
 ### OurWay/NoToFForMoney
 
 Prevents calling `.to_f` on Money objects to avoid precision loss.
