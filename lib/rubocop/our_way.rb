@@ -3,3 +3,4 @@
 require_relative 'cop/our_way/no_to_f_for_money'
 require_relative 'cop/our_way/spell_controller_inheritance'
 require_relative 'cop/our_way/spell_decline_code'
+require_relative 'cop/our_way/raise_standard_error'

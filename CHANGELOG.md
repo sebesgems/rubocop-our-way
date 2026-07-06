@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.0]
+
+### Added
+- `OurWay/RaiseStandardError` cop to forbid raising `StandardError` directly
+  - Flags `raise StandardError`, `raise StandardError, "message"`, `raise StandardError.new(...)`, `raise StandardError.exception(...)`, and the `fail` alias
+  - Does not flag re-raising a rescued exception (`rescue => e; raise e`) or raising a specific error class
+
+### Changed
+- Enabled `Style/RescueStandardError` with `EnforcedStyle: implicit`, flagging `rescue StandardError` in favor of a bare `rescue`
+  - **Note:** this reverses RuboCop's own default (`EnforcedStyle: explicit`), which previously required writing `StandardError` explicitly — projects that already rescue `StandardError` explicitly will see new offenses after upgrading
+
 ## [1.5.0]
 
 ### Added
