@@ -68,3 +68,11 @@ OurWay/NoToFForMoney:
   AllowedReceivers:
     - Time
     - Process
+
+# Flags `rescue StandardError` — forces `rescue` without an explicit class instead.
+Style/RescueStandardError:
+  Enabled: true
+  EnforcedStyle: implicit
+
+OurWay/RaiseStandardError:
+  Enabled: true
